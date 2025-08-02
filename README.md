@@ -10,6 +10,7 @@
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/snk-git-hub/leetcode/tree/master/0001-two-sum) |
+| [0205-isomorphic-strings](https://github.com/snk-git-hub/leetcode/tree/master/0205-isomorphic-strings) |
 ## Math
 |  |
 | ------- |
@@ -23,6 +24,7 @@
 | ------- |
 | [0014-longest-common-prefix](https://github.com/snk-git-hub/leetcode/tree/master/0014-longest-common-prefix) |
 | [0058-length-of-last-word](https://github.com/snk-git-hub/leetcode/tree/master/0058-length-of-last-word) |
+| [0205-isomorphic-strings](https://github.com/snk-git-hub/leetcode/tree/master/0205-isomorphic-strings) |
 ## Trie
 |  |
 | ------- |
