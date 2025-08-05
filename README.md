@@ -6,6 +6,7 @@
 | ------- |
 | [0001-two-sum](https://github.com/snk-git-hub/leetcode/tree/master/0001-two-sum) |
 | [0014-longest-common-prefix](https://github.com/snk-git-hub/leetcode/tree/master/0014-longest-common-prefix) |
+| [0026-remove-duplicates-from-sorted-array](https://github.com/snk-git-hub/leetcode/tree/master/0026-remove-duplicates-from-sorted-array) |
 ## Hash Table
 |  |
 | ------- |
@@ -55,4 +56,8 @@
 |  |
 | ------- |
 | [0451-sort-characters-by-frequency](https://github.com/snk-git-hub/leetcode/tree/master/0451-sort-characters-by-frequency) |
+## Two Pointers
+|  |
+| ------- |
+| [0026-remove-duplicates-from-sorted-array](https://github.com/snk-git-hub/leetcode/tree/master/0026-remove-duplicates-from-sorted-array) |
 <!---LeetCode Topics End-->
