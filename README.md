@@ -9,6 +9,7 @@
 | [0026-remove-duplicates-from-sorted-array](https://github.com/snk-git-hub/leetcode/tree/master/0026-remove-duplicates-from-sorted-array) |
 | [0054-spiral-matrix](https://github.com/snk-git-hub/leetcode/tree/master/0054-spiral-matrix) |
 | [0118-pascals-triangle](https://github.com/snk-git-hub/leetcode/tree/master/0118-pascals-triangle) |
+| [0119-pascals-triangle-ii](https://github.com/snk-git-hub/leetcode/tree/master/0119-pascals-triangle-ii) |
 | [0268-missing-number](https://github.com/snk-git-hub/leetcode/tree/master/0268-missing-number) |
 | [0349-intersection-of-two-arrays](https://github.com/snk-git-hub/leetcode/tree/master/0349-intersection-of-two-arrays) |
 | [2271-rearrange-array-elements-by-sign](https://github.com/snk-git-hub/leetcode/tree/master/2271-rearrange-array-elements-by-sign) |
@@ -91,4 +92,5 @@
 |  |
 | ------- |
 | [0118-pascals-triangle](https://github.com/snk-git-hub/leetcode/tree/master/0118-pascals-triangle) |
+| [0119-pascals-triangle-ii](https://github.com/snk-git-hub/leetcode/tree/master/0119-pascals-triangle-ii) |
 <!---LeetCode Topics End-->
