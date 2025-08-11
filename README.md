@@ -7,6 +7,7 @@
 | [0001-two-sum](https://github.com/snk-git-hub/leetcode/tree/master/0001-two-sum) |
 | [0014-longest-common-prefix](https://github.com/snk-git-hub/leetcode/tree/master/0014-longest-common-prefix) |
 | [0026-remove-duplicates-from-sorted-array](https://github.com/snk-git-hub/leetcode/tree/master/0026-remove-duplicates-from-sorted-array) |
+| [0048-rotate-image](https://github.com/snk-git-hub/leetcode/tree/master/0048-rotate-image) |
 | [0054-spiral-matrix](https://github.com/snk-git-hub/leetcode/tree/master/0054-spiral-matrix) |
 | [0118-pascals-triangle](https://github.com/snk-git-hub/leetcode/tree/master/0118-pascals-triangle) |
 | [0119-pascals-triangle-ii](https://github.com/snk-git-hub/leetcode/tree/master/0119-pascals-triangle-ii) |
@@ -25,6 +26,7 @@
 ## Math
 |  |
 | ------- |
+| [0048-rotate-image](https://github.com/snk-git-hub/leetcode/tree/master/0048-rotate-image) |
 | [0069-sqrtx](https://github.com/snk-git-hub/leetcode/tree/master/0069-sqrtx) |
 | [0268-missing-number](https://github.com/snk-git-hub/leetcode/tree/master/0268-missing-number) |
 ## Binary Search
@@ -87,6 +89,7 @@
 ## Matrix
 |  |
 | ------- |
+| [0048-rotate-image](https://github.com/snk-git-hub/leetcode/tree/master/0048-rotate-image) |
 | [0054-spiral-matrix](https://github.com/snk-git-hub/leetcode/tree/master/0054-spiral-matrix) |
 ## Dynamic Programming
 |  |
