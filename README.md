@@ -1,4 +1,22 @@
 # leetcode
+
+Most problems fall into these categories. Learn to identify them:
+
+| **Pattern** | **Clue Words** | **Common Approach** |
+|-------------|----------------|---------------------|
+| **Two Pointers** | Sorted array, pairs, palindrome | Left & right pointers |
+| **Sliding Window** | Subarray, substring, consecutive | Expand/contract window |
+| **Binary Search** | Sorted, find target, log(n) | Left/right boundaries |
+| **Hash Map** | Count, frequency, O(1) lookup | Store seen elements |
+| **Stack** | Nested, parentheses, next greater | LIFO structure |
+| **Queue/BFS** | Level-order, shortest path | FIFO structure |
+| **DFS** | All paths, backtracking | Recursion |
+| **DP** | Optimal, maximum, count ways | Subproblems + memoization |
+| **Greedy** | Maximize/minimize, local optimal | Make best choice now |
+| **Prefix Sum** | Range query, subarray sum | Cumulative sum array |
+
+---
+
 https://claude.ai/public/artifacts/36188888-1a5c-47ab-90a5-7164aef178c6
 <img width="956" height="419" alt="image" src="https://github.com/user-attachments/assets/006ff105-d532-433a-892c-8a61784c0293" />
 <img width="974" height="748" alt="image" src="https://github.com/user-attachments/assets/21788f64-3b2d-434f-92d3-29d10a79c30e" />
@@ -139,22 +157,6 @@ Here's a proven strategy for when you get stuck on a problem:
 
 ## 🎓 Pattern Recognition (THE SECRET SAUCE)
 
-Most problems fall into these categories. Learn to identify them:
-
-| **Pattern** | **Clue Words** | **Common Approach** |
-|-------------|----------------|---------------------|
-| **Two Pointers** | Sorted array, pairs, palindrome | Left & right pointers |
-| **Sliding Window** | Subarray, substring, consecutive | Expand/contract window |
-| **Binary Search** | Sorted, find target, log(n) | Left/right boundaries |
-| **Hash Map** | Count, frequency, O(1) lookup | Store seen elements |
-| **Stack** | Nested, parentheses, next greater | LIFO structure |
-| **Queue/BFS** | Level-order, shortest path | FIFO structure |
-| **DFS** | All paths, backtracking | Recursion |
-| **DP** | Optimal, maximum, count ways | Subproblems + memoization |
-| **Greedy** | Maximize/minimize, local optimal | Make best choice now |
-| **Prefix Sum** | Range query, subarray sum | Cumulative sum array |
-
----
 
 ## 💡 Pro Tips
 
