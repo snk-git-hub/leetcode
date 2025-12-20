@@ -1,3 +1,61 @@
+
+✓
+---
+##  Recursion Roadmap [✓]
+---
+##  Easy Problems
+* [✓] Factorial
+* [✓] Print 1 to n
+* [✓] Print n to 1
+* [✓] Sum of array
+* [✓] Reverse a string
+* [✓] Decimal to binary
+* [✓] Sum of digits
+* [✓] Array Min and Max
+* [✓] Palindrome Check
+---
+## Medium Problems
+* [ ] Mean of Array
+* [ ] Adjacent duplicates
+* [ ] Coin Change
+* [ ] Binary to Gray
+* [ ] Longest Palindromic Substring
+* [ ] Tower of Hanoi
+* [ ] Compute nCr
+* [ ] Permutations
+* [ ] Subsets
+* [ ] Possible paths in matrix
+* [ ] Combinations of Parentheses
+---
+##  Hard Problems
+* [ ] Sort a Queue
+* [ ] Sort a Stack
+* [ ] Palindromic Partitions
+* [ ] Scrambled Strings
+* [ ] Word Break Problem
+* [ ] N Queen Problem
+* [ ] Sudoku Solver
+* [ ] Knight's Tour
+---
+
+
+
+]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 https://claude.ai/public/artifacts/0d2ba1c7-d003-497d-97ed-2843e3786fc5
 https://claude.ai/public/artifacts/0d2ba1c7-d003-497d-97ed-2843e3786fc5
 https://claude.ai/public/artifacts/0d2ba1c7-d003-497d-97ed-2843e3786fc5
@@ -236,46 +294,4 @@ int main() {
     
     return 0;
 }
-
-
-✓
----
-##  Recursion Roadmap
----
-##  Easy Problems
-* [✓] Factorial
-* [✓] Print 1 to n
-* [✓] Print n to 1
-* [✓] Sum of array
-* [✓] Reverse a string
-* [✓] Decimal to binary
-* [✓] Sum of digits
-* [✓] Array Min and Max
-* [✓] Palindrome Check
----
-## Medium Problems
-* [ ] Mean of Array
-* [ ] Adjacent duplicates
-* [ ] Coin Change
-* [ ] Binary to Gray
-* [ ] Longest Palindromic Substring
-* [ ] Tower of Hanoi
-* [ ] Compute nCr
-* [ ] Permutations
-* [ ] Subsets
-* [ ] Possible paths in matrix
-* [ ] Combinations of Parentheses
----
-##  Hard Problems
-* [ ] Sort a Queue
-* [ ] Sort a Stack
-* [ ] Palindromic Partitions
-* [ ] Scrambled Strings
-* [ ] Word Break Problem
-* [ ] N Queen Problem
-* [ ] Sudoku Solver
-* [ ] Knight's Tour
----
-
-
 
