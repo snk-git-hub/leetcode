@@ -2,6 +2,8 @@
 <img width="1172" height="374" alt="image" src="https://github.com/user-attachments/assets/f7d247a2-2170-4636-ba16-6e6491fd8f54" />
 maths ::::https://schoolyourself.org/learn
 pattern::https://leetcode.com/discuss/post/5908573/important-dsa-patterns-100-must-know-for-0m7j/
+pattern ::::::   https://thita.ai/dsa-patterns-sheet
+
 
 
 Most problems fall into these categories. Learn to identify them:
