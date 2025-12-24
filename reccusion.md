@@ -15,7 +15,7 @@
 ---
 ## Medium Problems
 * [✓] Mean of Array
-* [ ] Adjacent duplicates
+* [✓] Adjacent duplicates
 * [ ] Coin Change
 * [ ] Binary to Gray
 * [ ] Longest Palindromic Substring
