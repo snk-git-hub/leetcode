@@ -61,3 +61,157 @@ Based on all the topics you've copied, here's a complete table with official doc
 - **Compiler Explorer (for testing)**: https://godbolt.org/
 
 This table covers **all** the topics from your three courses with direct links to official documentation!
+This document is the comprehensive reference for **Constraints and Concepts** in C++20. Let me explain the key sections:
+
+## What Are Concepts?
+
+**Concepts** are named sets of requirements for template parameters. They're compile-time predicates that specify what operations a type must support:
+
+```cpp
+template<typename T>
+concept Hashable = requires(T a)
+{
+    { std::hash<T>{}(a) } -> std::convertible_to<std::size_t>;
+};
+
+template<Hashable T>  // T must satisfy Hashable
+void f(T) {}
+```
+
+**Benefits:**
+- Better error messages (shows which concept wasn't satisfied)
+- Models semantic categories, not just syntax
+- Compile-time constraint checking
+
+## Constraints
+
+**Constraints** are the actual requirements. Three types:
+
+### 1. **Conjunctions** (`&&`)
+```cpp
+template<class T>
+concept SignedIntegral = Integral<T> && std::is_signed<T>::value;
+```
+- Both must be satisfied
+- Short-circuits left-to-right (prevents substitution failures)
+
+### 2. **Disjunctions** (`||`)
+```cpp
+template<class T = void>
+    requires EqualityComparable<T> || Same<T, void>
+struct equal_to;
+```
+- Either must be satisfied
+- Also short-circuits
+
+### 3. **Atomic Constraints**
+- Individual expressions after normalization
+- Must evaluate to exactly `bool` (no conversions)
+- Two atomic constraints are **identical** only if from the same source expression
+
+## Constraint Normalization
+
+The compiler transforms constraints into a standard form:
+
+```cpp
+template<typename T>
+concept A = T::value || true;
+
+template<typename U>
+concept B = A<U*>;  // Normalizes to: (T::value with T->U*) || true
+```
+
+**Purpose:** Allows the compiler to determine subsumption relationships.
+
+## Subsumption & Partial Ordering
+
+**Subsumption** determines which constraint is "stronger":
+
+```cpp
+template<typename T>
+concept Decrementable = requires(T t) { --t; };
+
+template<typename T>
+concept RevIterator = Decrementable<T> && requires(T t) { *t; };
+
+// RevIterator subsumes Decrementable (more constrained)
+
+template<Decrementable T> void f(T);    // #1
+template<RevIterator T> void f(T);      // #2 - more constrained
+
+f((int*)0);  // Calls #2 - both match, but #2 is more specific
+```
+
+**Key Rule:** `P` subsumes `Q` if `P` implies `Q`. This creates a partial ordering used for:
+- Overload resolution
+- Template specialization selection
+- Determining "best match"
+
+## Important Gotchas
+
+### 1. **Atomic Constraint Identity**
+```cpp
+template<class T>
+concept BadMeowableCat = is_meowable<T> && is_cat<T>;
+
+template<class T>
+concept GoodMeowableCat = Meowable<T> && is_cat<T>;
+
+template<BadMeowableCat T> void f(T);   // Ambiguous!
+template<Meowable T> void f(T);
+
+template<GoodMeowableCat T> void g(T);  // OK - subsumes
+template<Meowable T> void g(T);
+```
+- `BadMeowableCat` creates a **different** `is_meowable<T>` atomic constraint
+- `GoodMeowableCat` reuses `Meowable`'s constraint → subsumption works
+
+### 2. **Must Be Exactly `bool`**
+```cpp
+template<typename T>
+struct S { constexpr operator bool() const { return true; } };
+
+template<typename T>
+    requires (S<T>{})  // Error! S<T>{} is not bool
+void f(T);
+```
+
+### 3. **Redeclarations Must Match Syntactically**
+```cpp
+template<Incrementable T>
+void f(T) requires Decrementable<T>;  // OK
+
+template<typename T>
+    requires Incrementable<T> && Decrementable<T>
+void f(T);  // Ill-formed! Different syntax, even if logically equivalent
+```
+
+## `requires` Clause Syntax
+
+Can appear in multiple places:
+```cpp
+// After template parameter list
+template<typename T> requires Addable<T>
+T add(T a, T b);
+
+// At end of function declarator
+template<typename T>
+void f(T&&) requires Eq<T>;
+
+// In parameter (abbreviated function template)
+void f(Hashable auto x);
+
+// As type constraint
+template<Derived<Base> T>  // T is constrained by Derived<T, Base>
+void f(T);
+```
+
+## Summary
+
+Concepts provide **type-safe, semantic constraints** on templates with:
+- Clear error messages
+- Subsumption-based overload resolution
+- Compile-time checking
+- Better intent communication
+
+The normalization and subsumption rules ensure that more specific constraints are preferred, enabling precise control over template instantiation.
