@@ -1,14 +1,10 @@
-# Recursion Patterns with LeetCode Problems
-
-## 1. **Take / Not Take Pattern**
-
-### Problems:
-- **LeetCode 78 - Subsets**
-- **LeetCode 416 - Partition Equal Subset Sum**
-- **LeetCode 494 - Target Sum**
-- **LeetCode 698 - Partition to K Equal Sum Subsets**
-
-```cpp
+Recursion Patterns with LeetCode Problems
+1. Take / Not Take Pattern
+Problems:
+LeetCode 78 - Subsets
+LeetCode 416 - Partition Equal Subset Sum
+LeetCode 494 - Target Sum
+LeetCode 698 - Partition to K Equal Sum Subsets
 // LeetCode 78: Subsets
 class Solution {
 public:
@@ -35,17 +31,12 @@ public:
         return result;
     }
 };
-```
-
-## 2. **Try All Choices Pattern**
-
-### Problems:
-- **LeetCode 22 - Generate Parentheses**
-- **LeetCode 17 - Letter Combinations of a Phone Number**
-- **LeetCode 39 - Combination Sum**
-- **LeetCode 46 - Permutations**
-
-```cpp
+2. Try All Choices Pattern
+Problems:
+LeetCode 22 - Generate Parentheses
+LeetCode 17 - Letter Combinations of a Phone Number
+LeetCode 39 - Combination Sum
+LeetCode 46 - Permutations
 // LeetCode 22: Generate Parentheses
 class Solution {
 public:
@@ -70,9 +61,6 @@ public:
         return result;
     }
 };
-```
-
-```cpp
 // LeetCode 17: Letter Combinations of Phone Number
 class Solution {
 public:
@@ -99,16 +87,11 @@ public:
         return result;
     }
 };
-```
-
-## 3. **Include-Exclude with Loop Pattern**
-
-### Problems:
-- **LeetCode 90 - Subsets II** (with duplicates)
-- **LeetCode 40 - Combination Sum II**
-- **LeetCode 47 - Permutations II**
-
-```cpp
+3. Include-Exclude with Loop Pattern
+Problems:
+LeetCode 90 - Subsets II (with duplicates)
+LeetCode 40 - Combination Sum II
+LeetCode 47 - Permutations II
 // LeetCode 90: Subsets II (with duplicates)
 class Solution {
 public:
@@ -133,17 +116,12 @@ public:
         return result;
     }
 };
-```
-
-## 4. **Up-Down-Left-Right (Grid) Pattern**
-
-### Problems:
-- **LeetCode 200 - Number of Islands**
-- **LeetCode 79 - Word Search**
-- **LeetCode 130 - Surrounded Regions**
-- **LeetCode 733 - Flood Fill**
-
-```cpp
+4. Up-Down-Left-Right (Grid) Pattern
+Problems:
+LeetCode 200 - Number of Islands
+LeetCode 79 - Word Search
+LeetCode 130 - Surrounded Regions
+LeetCode 733 - Flood Fill
 // LeetCode 200: Number of Islands
 class Solution {
 public:
@@ -174,9 +152,6 @@ public:
         return count;
     }
 };
-```
-
-```cpp
 // LeetCode 79: Word Search
 class Solution {
 public:
@@ -209,15 +184,10 @@ public:
         return false;
     }
 };
-```
-
-## 5. **Partition Pattern**
-
-### Problems:
-- **LeetCode 131 - Palindrome Partitioning**
-- **LeetCode 93 - Restore IP Addresses**
-
-```cpp
+5. Partition Pattern
+Problems:
+LeetCode 131 - Palindrome Partitioning
+LeetCode 93 - Restore IP Addresses
 // LeetCode 131: Palindrome Partitioning
 class Solution {
 public:
@@ -251,18 +221,13 @@ public:
         return result;
     }
 };
-```
-
-## 6. **Tree Recursion (DFS)**
-
-### Problems:
-- **LeetCode 104 - Maximum Depth of Binary Tree**
-- **LeetCode 226 - Invert Binary Tree**
-- **LeetCode 112 - Path Sum**
-- **LeetCode 437 - Path Sum III**
-- **LeetCode 124 - Binary Tree Maximum Path Sum**
-
-```cpp
+6. Tree Recursion (DFS)
+Problems:
+LeetCode 104 - Maximum Depth of Binary Tree
+LeetCode 226 - Invert Binary Tree
+LeetCode 112 - Path Sum
+LeetCode 437 - Path Sum III
+LeetCode 124 - Binary Tree Maximum Path Sum
 // LeetCode 104: Maximum Depth
 class Solution {
 public:
@@ -271,9 +236,6 @@ public:
         return 1 + max(maxDepth(root->left), maxDepth(root->right));
     }
 };
-```
-
-```cpp
 // LeetCode 112: Path Sum
 class Solution {
 public:
@@ -288,16 +250,11 @@ public:
                hasPathSum(root->right, targetSum - root->val);
     }
 };
-```
-
-## 7. **Match/Skip Pattern**
-
-### Problems:
-- **LeetCode 10 - Regular Expression Matching**
-- **LeetCode 44 - Wildcard Matching**
-- **LeetCode 72 - Edit Distance**
-
-```cpp
+7. Match/Skip Pattern
+Problems:
+LeetCode 10 - Regular Expression Matching
+LeetCode 44 - Wildcard Matching
+LeetCode 72 - Edit Distance
 // LeetCode 44: Wildcard Matching
 class Solution {
 public:
@@ -323,16 +280,11 @@ public:
         return isMatch(s, p, 0, 0, dp);
     }
 };
-```
-
-## 8. **N-Queens / Backtracking Pattern**
-
-### Problems:
-- **LeetCode 51 - N-Queens**
-- **LeetCode 52 - N-Queens II**
-- **LeetCode 37 - Sudoku Solver**
-
-```cpp
+8. N-Queens / Backtracking Pattern
+Problems:
+LeetCode 51 - N-Queens
+LeetCode 52 - N-Queens II
+LeetCode 37 - Sudoku Solver
 // LeetCode 51: N-Queens
 class Solution {
 public:
@@ -378,17 +330,12 @@ public:
         return result;
     }
 };
-```
-
-## 9. **Memoization Pattern**
-
-### Problems:
-- **LeetCode 70 - Climbing Stairs**
-- **LeetCode 509 - Fibonacci Number**
-- **LeetCode 322 - Coin Change**
-- **LeetCode 139 - Word Break**
-
-```cpp
+9. Memoization Pattern
+Problems:
+LeetCode 70 - Climbing Stairs
+LeetCode 509 - Fibonacci Number
+LeetCode 322 - Coin Change
+LeetCode 139 - Word Break
 // LeetCode 70: Climbing Stairs
 class Solution {
 public:
@@ -404,16 +351,11 @@ public:
         return climbStairs(n, dp);
     }
 };
-```
-
-## 10. **Divide and Conquer Pattern**
-
-### Problems:
-- **LeetCode 23 - Merge k Sorted Lists**
-- **LeetCode 215 - Kth Largest Element**
-- **LeetCode 108 - Convert Sorted Array to BST**
-
-```cpp
+10. Divide and Conquer Pattern
+Problems:
+LeetCode 23 - Merge k Sorted Lists
+LeetCode 215 - Kth Largest Element
+LeetCode 108 - Convert Sorted Array to BST
 // LeetCode 108: Convert Sorted Array to BST
 class Solution {
 public:
@@ -433,6 +375,4 @@ public:
         return sortedArrayToBST(nums, 0, nums.size() - 1);
     }
 };
-```
-
 These are the most common recursion patterns you'll encounter on LeetCode. Practice these and you'll be able to recognize and solve most recursion problems!
